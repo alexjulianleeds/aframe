@@ -5,9 +5,11 @@ require('@ungap/custom-elements');
 
 // WebVR polyfill
 // Check before the polyfill runs.
-window.hasNativeWebVRImplementation = !!window.navigator.getVRDisplays ||
-                                      !!window.navigator.getVRDevices;
-window.hasNativeWebXRImplementation = navigator.xr !== undefined;
+//window.hasNativeWebVRImplementation = !!window.navigator.getVRDisplays ||
+//                                      !!window.navigator.getVRDevices;
+//window.hasNativeWebXRImplementation = navigator.xr !== undefined;
+
+window.hasNativeWebXRImplementation = false;
 
 // If native WebXR or WebVR are defined WebVRPolyfill does not initialize.
 if (!window.hasNativeWebXRImplementation && !window.hasNativeWebVRImplementation) {
