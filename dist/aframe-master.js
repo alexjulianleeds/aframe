@@ -30144,6 +30144,7 @@ __webpack_require__(/*! @ungap/custom-elements */ "./node_modules/@ungap/custom-
 // Check before the polyfill runs.
 
 window.hasNativeWebXRImplementation = false;
+console.log(window.hasNativeWebXRImplementation);
 
 // If native WebXR or WebVR are defined WebVRPolyfill does not initialize.
 if (!window.hasNativeWebXRImplementation && !window.hasNativeWebVRImplementation) {
